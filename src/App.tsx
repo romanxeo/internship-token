@@ -74,9 +74,9 @@ const App: React.FC = () => {
 
     return (
         <div className="body">
-            <div className="line">Domain: <input value={domain} onChange={(e) => setDomain(e.target.value)}/> - {domain}</div>
-            <div className="line">Client Id: <input value={clientId} onChange={(e) => setClientId(e.target.value)}/> - {clientId}</div>
-            <div className="line">Audience: <input value={audience} onChange={(e) => setAudience(e.target.value)}/> - {audience}</div>
+            <div className="line">Domain: <input value={domain} onChange={(e) => setDomain(e.target.value)}/></div>
+            <div className="line">Client Id: <input value={clientId} onChange={(e) => setClientId(e.target.value)}/></div>
+            <div className="line">Audience: <input value={audience} onChange={(e) => setAudience(e.target.value)}/></div>
             <div className="line"><button onClick={save}>Save to localStorage</button></div>
 
             {!!domain && !!clientId && !!audience &&
@@ -84,7 +84,7 @@ const App: React.FC = () => {
                     domain={`${domain}`}
                     clientId={`${clientId}`}
                     audience={`${audience}`}
-                    redirectUri={window.location.origin}
+                    redirectUri='https://romanxeo.github.io/internship-token'
                 >
                     <_App/>
                 </Auth0Provider>
