@@ -1,0 +1,18 @@
+.body {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px;
+  word-wrap: break-word;
+}
+
+.line {
+  margin-bottom: 10px;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.token {
+  margin-top: 40px;
+}
